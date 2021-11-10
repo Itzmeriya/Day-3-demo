@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EXAMPLE FUN</title>       
+    </head>
+    <body>
+        <h1 id="stu"></h1>
+        <h1 id="sum"></h1>
+        <script>
+            const student={
+                Name:"Riya",Rollno:"34",Mathsmark:"45",Sciencemark:"48",Englishmark:"49",Totalmark:function details(){
+                    return "Name : "+""+this.Name+", Rollno : "+""+this.Rollno+", Mathsmark : "+""+this.Mathsmark+""+", sciencemark : "+""+
+                    this.Sciencemark+", Englishmark : "+""+this.Englishmark;
+                }
+            }
+            let data=student.Totalmark();
+            document.getElementById("stu").innerHTML=data;
+            document.getElementById("sum").innerHTML=(45+48+49);
+        
+        </script>
+    </body>
+
+</html>

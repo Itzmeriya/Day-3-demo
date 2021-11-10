@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String Operations</title>
+        <meta name="viewport" content width="device-width ; initial scale=1.0">
+    </head>
+    <body>
+        <h2 id="s1"></h2>
+        <h2 id="s2"></h2>
+        <h2 id="s3"></h2>
+        <h2 id="s4"></h2>
+        <h2 id="s5"></h2>
+        <h2 id="s6"></h2>
+        <h2 id="s7"></h2>
+        <script>
+            let str="A welcome speech is a speach given by the host at the begining of the ceremony or an event to show warmth and gratitude towards the people who have taken pains to mark their presence.";
+            document.getElementById("s1").innerText=str;
+            let len=str.length;
+            document.getElementById("s2").innerText=len;
+            let sl=str.slice(12,30);
+            document.getElementById("s3").innerText=sl;
+            let st=str.substring(12,30);
+            document.getElementById("s4").innerText=st;
+            let si=str.substr(12,30);
+            document.getElementById("s5").innerText=si;
+            let sr=str.replace("speach given by the host at the begining of the ceremony","what is this");
+            document.getElementById("s6").innerText=sr;
+            let sn=" It marks the beginning of an event.";
+            let sg=str.concat(sn);
+            document.getElementById("s7").innerText=sg;
+        </script>
+    </body>
+</html>

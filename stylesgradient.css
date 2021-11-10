@@ -1,0 +1,14 @@
+#grad1{background-image: linear-gradient(red,rgb(0, 238, 255));width: 500px; height: 250px;}
+#grad2{background-image: linear-gradient(grey,blue);width: 500px; height: 250px;}
+#grad3{background-image: linear-gradient(cyan,rgb(255, 0, 85));width: 500px; height: 250px;}
+#grad4{background-image: linear-gradient(rgb(200, 255, 0),blue);width: 500px; height: 250px;}
+#grad5{background-image: radial-gradient(red,orange blue);width: 500px; height: 250px;}
+#grad6{background-image: radial-gradient(rgb(105, 72, 72),blue);width: 500px; height: 250px;}
+#grad7{background-image: radial-gradient(red,rgb(71, 71, 131));width: 500px; height: 250px;}
+#grad8{background-image: radial-gradient(rgb(0, 255, 85),blue);width: 500px; height: 250px;}
+h1{color: lightpink;text-align: center;}
+h3{color: mediumseagreen;text-align: center;}
+@keyframes example{
+    from{background-color:whitesmoke;}
+    to{background-color: yellow;}}
+#divanimation{width: 100px;height: 100px;background-color: red; animation-name: example;animation-duration: 20s;}

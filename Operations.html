@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Operations</title>
+    </head>
+    <body>
+        <h2 id="sum"></h2>
+        <h2 id="difference"></h2>
+        <h2 id="product"></h2>
+        <h2 id="division"></h2>
+        <h2 id="trainee"></h2>
+        <h2 id="toys"></h2>
+        <h2 id="fnc"></h2>
+        <h2 id="dtf"></h2>
+        <h1 id="dt"></h1>
+        <button onclick="displaydatetime()">Click me for Date Time </button>
+        <h1 id="dt1" onmouseover="domagic()">Hello! World</h1>
+        <script>
+            let x=3;
+            let y=2;
+            let a=x+y;
+            let b=x-y;
+            let c=x*y;
+            let d=x/y;
+            const person={traineeName:"amal",education:"B.Tech",DOJ:"23 Sept 2021",Location:"Trivandrum"}
+            const toyname=["CAR","BUS","JEEP","CYCLE"]
+            function add2numbers(no1,no2){
+                return no1+no2;
+            }
+            let total=add2numbers(12,45);
+            const employee={empid:1133,empname:"Rajan",designation:"Software Engineer",empdetails:function details(){
+                return this.empid+" Name is"+this.empname+"Role is"+this.designation;
+            }}
+            let data=employee.empdetails();
+            document.getElementById("sum").innerHTML=a;
+            document.getElementById("difference").innerHTML=b;
+            document.getElementById("product").innerHTML=c;
+            document.getElementById("division").innerHTML=d;
+            document.getElementById("trainee").innerHTML=person.traineeName+""+person.education+""+person.DOJ+""+person.Location;
+            document.getElementById("toys").innerText=toyname;
+            document.getElementById("fnc").innerHTML="total="+total;
+            document.getElementById("dtf").innerHTML=data;
+            function displaydatetime(){
+                document.getElementById("dt").innerHTML=Date();
+            }
+            function domagic(){
+                document.getElementById("dt1").style.color="Red";
+            }
+        </script>
+    </body>
+</html>
